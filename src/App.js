@@ -4,8 +4,12 @@ import Form from './Form'
 import Order from './Order'
 
 class App extends Component {
-  state: {
-    orders: []
+  
+  constructor() {
+    super()
+    this.state = {
+      orders: []
+    }
   }
 
   addOrder = (order) => {
